@@ -49,8 +49,8 @@ class Mail
                 $secure = 'ssl';
                 $port = 465;
             } else if (stripos($username, '@zysy.ga') !== false) {
-                $host = 'smtp.exmail.qq.com';
-                $secure = 'SSL';
+                $host = 'smtp.zysy.ga';
+                $secure = 'ssl';
                 $port = 465;
             } else {
                 throw new \Exception('不受支持的邮箱。目前仅支持谷歌邮箱、QQ邮箱以及163邮箱，推荐使用谷歌邮箱。');
