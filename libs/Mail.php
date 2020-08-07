@@ -59,7 +59,7 @@ class Mail
             self::$mail->SMTPDebug = config('debug') ? 2 : 0; // Debug 0：关闭 1：客户端信息 2：客户端和服务端信息
             self::$mail->isSMTP(); // 告诉PHPMailer使用SMTP
             self::$mail->Host = $host; // SMTP服务器
-            self::$mail->SMTPAuth = true; // 启用SMTP身份验证
+            self::$mail->SMTPAuth = false; // 启用SMTP身份验证
             self::$mail->Username = $username; // 账号
             self::$mail->Password = $password; // 密码或授权码
             self::$mail->SMTPSecure = $secure; // 将加密系统设置为使用 - ssl（不建议使用）或tls
