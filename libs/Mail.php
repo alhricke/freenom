@@ -49,7 +49,7 @@ class Mail
                 $secure = 'ssl';
                 $port = 465;
             } else if (stripos($username, '@zysy.ga') !== false) {
-                $host = 'hwsmtp.exmail.qq.com';
+                $host = 'smtp.exmail.qq.com';
                 $secure = 'SSL';
                 $port = 465;
             } else {
